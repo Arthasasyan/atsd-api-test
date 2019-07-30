@@ -23,6 +23,7 @@ public class Mocks {
     public static final Map<String, String> TAGS = Collections.singletonMap("tag", "value");
     public static final int ALERT_OPEN_VALUE = 1;
     public static final String ENTITY_TAGS_PROPERTY_TYPE = "$entity_tags";
+    public static final int INT_VALUE = 22;
 
     public static Date date() {
         return Util.parseDate(ISO_TIME);
@@ -54,10 +55,6 @@ public class Mocks {
 
     public static String replacementTable() {
         return NAME_GENERATOR.newTestName(TestNameGenerator.Key.REPLACEMENT_TABLE);
-    }
-
-    public static int value() {
-        return 22;
     }
 
     public static Series series() {
